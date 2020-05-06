@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+     <meta charset="UTF-8">
+     <title>Registration Form</title>
+     	<meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="{%static 'css/bootstrap.min.css'    %}">
+         <link rel="stylesheet" href="{%static 'css/icofont.min.css'    %}">    
+            
+</head>
+    <style>
+        body{
+	 background-image:url({%static 'img/terror12.jpg' %});
+	 background-repeat:no-repeat;
+	 background-size:cover;
+	 width:100%;
+	 height:100vh;
+	 overflow:auto;
+	 
+}
+        /*-----for border----*/
+.container{
+	font-family:Roboto,sans-serif;
+	  background-image:url({%static 'img/registerimg.jpg' %}) ;
+    
+     border-style: 1px solid grey;
+     margin: 0 auto;
+     text-align: center;
+     opacity: 0.8;
+     margin-top: 67px;
+   box-shadow: 2px 5px 5px 0px #eee;
+     max-width: 500px;
+     padding-top: 10px;
+     height: 363px;
+     margin-top: 166px;
+}
+        
+#lname{
+	 margin-top:5px;
+}
+	  
+
+/*---for heading-----*/
+.heading{
+	 text-decoration:bold;
+	 text-align : center;
+	 font-size:30px;
+	 color:#F96;
+	 padding-top:10px;
+}
+/*-------for email----------*/
+  /*------label----*/
+#email{
+	  margin-top: 5px;
+}
+/*-----------for Password--------*/
+     /*-------label-----*/
+.mail{
+	 margin-left: 16px;
+     font-family:serif;
+     color: white;
+     font-size: 14px;
+     margin-top: 13px;
+}
+.pass{
+	 color: white;
+     margin-top: 9px;
+     font-size: 14px;
+     font-family:serif;
+     margin-left: 6px;
+     margin-top: 9px;
+}
+#password{
+ margin-top: 6px;
+}
+
+	
+}	
+
+
+
+   
+/*------------For submit button---------*/
+.sbutton{
+	 color: white;
+     font-size: 20px;
+     border: 1px solid white;
+     background-color: #080808;
+     width: 80%;
+     margin-left: 41%;
+     margin-top: 100px;
+	 box-shadow: 0px 2px 2px 0px white;
+  	   
+   }
+.btn.btn-warning:hover {
+    box-shadow: 2px 1px 2px 3px #99ccff;
+	background:#5900a6;
+	color:#fff;
+	transition: background-color 1.15s ease-in-out,border-color 1.15s ease-in-out,box-shadow 1.15s ease-in-out;
+	
+}	 
+	  
+    
+    
+    
+    
+    
+    </style>
+<body>
+ <div class="container">
+ <!---heading---->
+     <header class="heading">Client-Login</header><hr></hr>
+    <!-----For email---->
+		 <div class="col-sm-12">
+		     <div class="row">
+			     <div class="col-md-4">
+		             <label class="mail" >USERNAME :</label></div>
+			     <div class="col-md-8"	>	 
+			          <input type="email" name="email"  id="email"placeholder="Usename" class="form-control" >
+		         </div>
+		     </div>
+		 </div>
+	 <!-----For Password and confirm password---->
+          <div class="col-sm-12">
+		         <div class="row">
+				     <div class="col-md-4">
+		 	              <label class="pass">PASSWORD:</label></div>
+				  <div class="col-md-8">
+			             <input type="password" name="password" id="password" placeholder="Password" class="form-control">
+				 </div>
+          </div>
+		  </div>
+    <br/><br/>
+    <div class="col-sm-12">
+		         <div class="btn btn-warning" ><i class="icofont icofont-lock"></i> Login </div>
+           </div>
+
+           
+
+
+
+           <script src="{%static 'js/jquery-3.4.1.min.js'%}"></script>
+           <script src="{%static 'js/bootstrap.bundle.min.js' %}"> </script>
+               
+    </body>
+</html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+	

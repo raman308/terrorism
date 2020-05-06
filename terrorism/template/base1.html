@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Project ADMIN - PANEL </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <!-- CSS files -->
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{%static 'css/icofont.css'%}">
+    <link rel="stylesheet" href="{%static 'sidebar/style.violet.css' %}">
+    <link rel="shortcut icon" href="{%static 'favicon.png' %}">
+
+  </head>
+  <body> 
+    <!-- navbar-->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg px-4 py-2  shadow" style="background: linear-gradient(to right bottom, #053726, #125631, #307635, #589631, #88b524);"><a href="#" class="sidebar-toggler text-gray-500 mr-4 mr-lg-5 lead"><i class="icofont icofont-user-alt-7"></i> </a><a href="#" class="navbar-brand font-weight-bold text-uppercase text-base" style="color: white"> <h2>Global Terrorism</h2></a>
+        <ul class="ml-auto d-flex align-items-center list-unstyled mb-0">
+            
+          <li class="nav-item dropdown ml-auto"><a id="userInfo" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><img src="{%static 'img/admin.png' %}" alt="Admin" style="max-width: 2.5rem;" class="img-fluid rounded-circle shadow"></a>
+            <div aria-labelledby="userInfo" class="dropdown-menu"><a href="myprofile.html" class="dropdown-item"><strong class="d-block text-uppercase headings-font-family"><i class="icofont icofont-user"></i>My Profile</strong></a>
+              
+              <div class="dropdown-divider"></div><a href="#" class="dropdown-item"><i class="icofont icofont-power"></i>Logout</a>
+            </div>
+          </li>
+          </ul>
+      </nav>
+    </header>
+    <div class="d-flex align-items-stretch">
+      <div id="sidebar" class="sidebar py-3">
+        <div class="text-gray-400 text-uppercase px-3 px-lg-4 py-4 font-weight-bold small headings-font-family">MAIN</div>
+        <ul class="sidebar-menu list-unstyled">
+              
+          <li class="sidebar-list-item"><a href="#" data-toggle="collapse" data-target="#pages" aria-expanded="false" aria-controls="pages" class="sidebar-link text-muted active"><i class="icofont icofont-user mr-3 text-gray"></i><span>My Account</span></a>
+            <div id="pages" class="collapse">
+              <ul class="sidebar-menu list-unstyled border-left border-primary border-thick">
+                <li class="sidebar-list-item"><a href="myprofile.html" class="sidebar-link text-muted pl-lg-5"><i class="icofont icofont-user-alt-7 mr-3 text-gray"></i>My Profile</a></li>
+                <li class="sidebar-list-item"><a href="editprofile.html" class="sidebar-link text-muted pl-lg-5"><i class="icofont icofont-user-alt-3 mr-3 text-gray"></i>Edit Profile</a></li>
+                     </ul>
+            </div>
+          </li>
+              <li class="sidebar-list-item"><a href="review.html" class="sidebar-link text-muted"><i class="icofont icofont-chat mr-3 text-gray"></i><span>Review</span></a></li>
+            
+              <li class="sidebar-list-item"><a href="chngepass.html" class="sidebar-link text-muted"><i class="icofont icofont-spinner-alt-3 mr-3 text-gray"></i><span>Change Password</span></a></li>
+            
+               <li class="sidebar-list-item"><a href="help&support.html" class="sidebar-link text-muted"><i class="icofont icofont-spinner-alt-3 mr-3 text-gray"></i><span>Help & Support</span></a></li>
+            
+                 <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted"><i class="icofont icofont-sign-in mr-3 text-gray"></i><span>Log In</span></a></li>
+      
+      
+      
+        </ul>
+        <div class="text-gray-400 text-uppercase px-3 px-lg-4 py-4 font-weight-bold small headings-font-family">EXTRAS</div>
+        <ul class="sidebar-menu list-unstyled">
+              <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted"><i class="icofont icofont-power mr-3 text-gray"></i><span>Log Out</span></a></li>
+           
+        </ul>
+      </div>
+        <!--- header ends here -->
+        {% block content %}
+        {% endblock %}      
+
+
+         <!-- footer-->
+    <script src="{%static 'js/jquery-3.4.1.min.js' %}"></script>
+    <script src="{%static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{%static 'sidebar/front.js' %}"></script>
+  </body>
+</html>

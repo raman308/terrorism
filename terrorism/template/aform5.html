@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    
+<div class="row" style="background-color: #a6b71b">
+     <div class="col-md-12 text-center pt-5 pb-5 text-white">
+        <h2> Conatct Us </h2>
+</div></div> 
+<div class="container pt-5">
+     <div class="row">
+     <div class="col-md-4">
+<h5> Get In Touch </h5><sup class="text-danger">____________</sup>
+<br/>
+<div class="mt-3 alert alert-light border">
+<h5> <i class="icofont-pin text-danger"></i> Location </h5>
+<h6 class="pl-4"> Ranjit Avenue , Amritsar  </h6> </div>
+<div class="mt-3 alert alert-light border">
+<h5> <i class="icofont-phone text-danger"></i> Call At </h5>
+<h6 class="pl-4"> +91 98989 54312 , 1800 2000 2100 ,  </h6> </div>
+<div class="mt-3 alert alert-light border">
+<h5> <i class="icofont-email text-danger"></i> Email at </h5>
+<h6 class="pl-4"> helpdesk@gmail.com  </h6> </div>
+<h5> Follow us <i class="icofont-facebook btn btn-primary"></i> 
+<i class="icofont-instagram btn btn-warning" ></i> 
+<i class="icofont-google-plus btn btn-danger"></i>
+<i class="icofont-linkedin btn btn-info"></i></h5>
+</div>
+
+     <div class="col-md-1"></div>
+     <div class="col-md-6">
+<h5> Send Message </h5><sup class="text-danger">_____________</sup>
+<p>In case of any Question or Query.Fill the form bellow:</p><br/>
+<form> 
+<input type="text" required="required" name="nm" class="form-control" placeholder="Your Name *" pattern="[A-Z a-z]{2,40}"> <br/>
+
+<input type="email" required="required" name="em" class="form-control" placeholder="Your Email Id *"> <br/>
+
+<input type="tel"  name="ph" class="form-control" placeholder="Your Phone No" pattern="[0-9]{10}"> <br/>
+
+<textarea class="form-control" name="msg" maxlength="600" placeholder="Type Your Message Here" rows="5"></textarea> <br/>
+
+<button class="btn btn-outline-danger rounded-pill">
+Send Message <i class="icofont-send-mail"></i> </button> 
+</form> 
+
+</div></div></div>
+<div class="row">
+    <div class="col-md-12">
+        
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27169.85794126198!2d74.84327394295215!3d31.654865304803494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39196493fdde71ef%3A0x5a89f3cec3595534!2sRanjit%20Avenue%2C%20Amritsar%2C%20Punjab!5e0!3m2!1sen!2sin!4v1580795552714!5m2!1sen!2sin" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+    </div>
+
+
+</div>
+    
+{% endblock %}   
